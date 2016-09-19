@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Diff Checker</title>
+</head>
+<body>
+<h2> Default Policy MO Diff Checker</h2>
+<h3> Usage :</h3>
+<p> 1. SSH to savbu-aut-srv9 with CEC Credentials <br/><br/> 2. Go to  dir /auto/ucs-india/defaultDiff <br/><br/>
+    3. Create xml files for the builds/releases you want the Diff to be done. <br/>
+    Ex: touch granda.xml granada-mr1.xml ;<br/><br/>
+    4. the content of the xml file should be fetched from autoconfig.xml of the corresponding release build url<br/>
+
+    Ex: For Granada-MR1 #183 build autoconfig xml - go to <br/>
+    https://cspg-releng.cisco.com/ucs-b-series/granada_mr1_sam-builds/160610-100230-rev280608-183c/perfocarta/model/
+    specific/mo/compute/autoconfig.xml<br/>
+    Copy entire xml except first line and save in in granada-mr1.xml you created in step 3<br/><br/>
+
+    5. That's it just give the names of the xml files in below form <br>
+    ex: Name of First Release: granada.xml, Name of Second Release: granada-mr1.xml
+
+    <br/>
+
+</p>
+
+<form action="/parser" method="post" ><b>
+<label> Enter Name of First Release </label>
+<input type="text" name="firstxml" /><br/><br/>
+<label> Enter Name of Second Release </label>
+<input type="text" name="secondxml" /><br/><br/>
+<input type="submit"></b>
+</form>
+
+
+
+</body>
+</html>

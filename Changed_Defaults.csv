@@ -1,0 +1,78 @@
+    MO_NAME    ,    PROPERTY    ,    VALUE for First XML    ,    VALUE for Second XML    
+
+adaptor:HostEthIfProfileVMWare,resourceGroups,1,32
+adaptor:HostEthIfProfileVMWare,memoryRegions,1,131072
+adaptor:HostEthIfProfileVMWare,queuePairs,1,256
+
+adaptor:HostFcIfProfileWindows,lunQueueDepth,<Property Not Present>,20
+adaptor:HostFcIfProfileWindows,ioRetryTimeout,<Property Not Present>,5
+
+adaptor:EthInterruptProfile,count,4,8
+
+adaptor:RssProfile,receiveSideScaling,disabled,enabled
+
+adaptor:HostEthIfProfileLinux,resourceGroups,1,32
+adaptor:HostEthIfProfileLinux,memoryRegions,1,131072
+adaptor:HostEthIfProfileLinux,queuePairs,1,256
+
+adaptor:HostEthIfProfileSRIOV,resourceGroups,1,32
+adaptor:HostEthIfProfileSRIOV,memoryRegions,1,131072
+adaptor:HostEthIfProfileSRIOV,queuePairs,1,256
+
+adaptor:EthRecvQueueProfile,count,1,4
+
+adaptor:HostEthIfProfileSolaris,resourceGroups,1,32
+adaptor:HostEthIfProfileSolaris,memoryRegions,1,131072
+adaptor:HostEthIfProfileSolaris,queuePairs,1,256
+
+bios:VfIntelVTForDirectedIO,vpIntelVTDATSSupport,<Property Not Present>,enabled
+bios:VfIntelVTForDirectedIO,vpIntelVTDCoherencySupport,disabled,enabled
+bios:VfIntelVTForDirectedIO,vpIntelVTDInterruptRemapping,enabled,<Propery Not Present>
+
+adaptor:EthRoCEProfile,adminState,disabled,enabled
+adaptor:EthRoCEProfile,resourceGroups,1,32
+adaptor:EthRoCEProfile,queuePairs,1,2048
+adaptor:EthRoCEProfile,memoryRegions,1,131072
+
+adaptor:HostEthIfProfileVMWarePassThru,resourceGroups,1,32
+adaptor:HostEthIfProfileVMWarePassThru,memoryRegions,1,131072
+adaptor:HostEthIfProfileVMWarePassThru,queuePairs,1,256
+
+adaptor:EthCompQueueProfile,count,2,5
+
+compute:MemoryConfigPolicydefault,blackListing,disabled,enabled
+
+org:Orgroot,vpProcessorC6Report,<Property Not Present>,disabled
+org:Orgroot,vpIntelHyperThreadingTech,<Property Not Present>,disabled
+org:Orgroot,vpCoreMultiProcessing,<Property Not Present>,all
+org:Orgroot,syncOption,<Property Not Present>,default
+org:Orgroot,vpSelectMemoryRASConfiguration,<Property Not Present>,maximum-performance
+org:Orgroot,vpIntelTurboBoostTech,<Property Not Present>,enabled
+org:Orgroot,vpMemoryMappedIOAbove4GB,<Property Not Present>,disabled
+org:Orgroot,vpLvDDRMode,<Property Not Present>,performance-mode
+org:Orgroot,vpProcessorC1E,<Property Not Present>,disabled
+org:Orgroot,vpExecuteDisableBit,<Property Not Present>,disabled
+org:Orgroot,vpEnhancedIntelSpeedStepTech,<Property Not Present>,enabled
+org:Orgroot,vpNUMAOptimized,<Property Not Present>,enabled
+org:Orgroot,vpIntelVTDATSSupport,<Property Not Present>,enabled
+org:Orgroot,memoryRegions,1,131072
+org:Orgroot,descr,Recommended bios settings for SRIOV vNICs,Recommended bios settings for usNIC vNICs
+org:Orgroot,vpIntelVTDCoherencySupport,disabled,enabled
+org:Orgroot,resourceGroups,1,32
+org:Orgroot,adminState,disabled,enabled
+org:Orgroot,queuePairs,1,2048
+org:Orgroot,blackListing,disabled,enabled
+org:Orgroot,receiveSideScaling,disabled,enabled
+org:Orgroot,name,SRIOV,usNIC
+
+domain:ServerFeatureCont,name,HEALTH_POLICY_FEATURE,POPULATE_TEMPLATE_NAME_FEATURE
+domain:ServerFeatureCont,functionalState,disabled,enabled
+
+domain:StorageFeatureCont,name,STORAGE_PROFILE_FEATURE,STORAGE_CONNECTION_FEATURE
+
+adaptor:HostEthIfProfileWindows,resourceGroups,1,32
+adaptor:HostEthIfProfileWindows,memoryRegions,1,131072
+adaptor:HostEthIfProfileWindows,queuePairs,1,256
+
+domain:NetworkFeatureCont,name,NETFLOW_FEATURE,VNIC_PAIRING_FEATURE
+domain:NetworkFeatureCont,functionalState,disabled,enabled
